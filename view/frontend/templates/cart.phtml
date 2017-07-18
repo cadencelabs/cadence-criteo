@@ -1,0 +1,21 @@
+<?php
+/**
+ * @author Cadence Labs <info@cadence-labs.com>
+ * @var Cadence\Criteo\Block\Cart $block
+ */
+?>
+<script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+<script type="text/javascript">
+    (function() {
+        var isMobile = false;
+        if ("undefined" !== typeof window.navigator && "undefined" !== typeof window.navigator.userAgent) {
+            isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
+        }
+        window.criteo_q = window.criteo_q || [];
+        window.criteo_q.push(
+            {event: "setAccount", account: <?php echo $block->getAccountId() ?> },
+            {event: "setSiteType", type: (isMobile ? "m" : "d")},
+            {event: "setEmail", email: "<?php echo $block->getCustomerEmail() ?>"},
+            {event: "viewBasket", item: <?php echo $block->getItemsJson() ?>});
+    })();
+</script>

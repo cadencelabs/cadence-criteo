@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block ifconfig="criteo/tags/enabled"  template="Cadence_Criteo::search.phtml" class="Cadence\Criteo\Block\Search" name="criteo.search" after="-" />
+        </referenceContainer>
+    </body>
+</page>
