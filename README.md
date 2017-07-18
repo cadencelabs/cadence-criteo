@@ -1,4 +1,4 @@
-# cadence/m2-criteo
+# cadence/criteo
 
 ### Summary
 This extension provides Criteo OneTag Support For Magento 2.x
