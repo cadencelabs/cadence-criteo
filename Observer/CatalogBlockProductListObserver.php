@@ -25,7 +25,9 @@ class CatalogBlockProductListObserver implements ObserverInterface {
      * @param \Magento\Framework\Event\Observer $observer
      */
     public function execute(\Magento\Framework\Event\Observer $observer) {
-        $collection = $observer->getData('collection');
-        $this->_registry->register('catalog_block_product_list_collection', $collection);
+        if(!$this->_registry->registry('criteo_catalog_block_product_list_collection')) {
+            $collection = $observer->getData('collection');
+            $this->_registry->register('criteo_catalog_block_product_list_collection', $collection);
+        }
     }
 }

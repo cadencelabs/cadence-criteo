@@ -30,7 +30,7 @@ class Category extends Base
 
     public function getItemsJson()
     {
-        $items = $this->_registry->registry('catalog_block_product_list_collection');
+        $items = $this->_registry->registry('criteo_catalog_block_product_list_collection');
         $arr = array();
         if ($items) {
             $i = 0;
