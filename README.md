@@ -11,4 +11,4 @@ This extension provides Criteo OneTag Support For Magento 2.x
 * TrackTransaction (purchase)
 
 ### More Info
-Please see the official support guide at www.cadence-labs.com/
+Please see the official support guide at https://www.cadence-labs.com/2017/07/free-criteo-onetag-extension-magento-2/
