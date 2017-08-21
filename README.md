@@ -10,5 +10,9 @@ This extension provides Criteo OneTag Support For Magento 2.x
 * ViewBasket (cart)
 * TrackTransaction (purchase)
 
+### License
+
+GPL 3.0 (see license.txt)
+
 ### More Info
 Please see the official support guide at https://www.cadence-labs.com/2017/07/free-criteo-onetag-extension-magento-2/
